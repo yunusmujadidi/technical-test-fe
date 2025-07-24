@@ -20,7 +20,7 @@ const HomePage = () => {
         console.log("Data received:", response.data.data);
         setData(response.data.data || []);
         setLoading(false);
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Error fetching data:", error);
         setLoading(false);
       }
